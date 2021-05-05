@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  font-family: "Itim", cursive;
+  background-color: #2b2a2a;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  background-color: #08f;
+  cursor: pointer;
+}
+a:visited {
+  color: #202020;
+}
+a:link {
+  color: #202020;
+}
+a:active {
+  color: #202020;
+}
+
+p {
+  background-color: #08f;
+}
+
+.SoftUrl {
+  text-decoration: none;
+}
+
+#HeaderPage {
+  background-color: #08f;
+  padding: 16px;
+}
+#HeaderPage h1 {
+  background-color: #08f;
+  color: #202020;
+}
+
+#Footer {
+  background-color: #08f;
+  position: absolute;
+  padding: 15px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+#Footer p {
+  text-align: center;
+}
+
+.Carte {
+  border: 1px solid #000;
+  display: inline-block;
+  box-shadow: 5px 5px 2px 1px #1d1d1d;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 10px;
+  background-color: #424242;
+}
+.Carte p {
+  background-color: #424242;
+}
+
+/*# sourceMappingURL=style.css.map */

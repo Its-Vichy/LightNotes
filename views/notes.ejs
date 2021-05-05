@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <header>
+        <meta charset="utf-8">
+        <title>LightNotes</title>
+    </header>
+
+    <body>
+        <div id="HeaderPage">
+            <h1>LightNotes.</h1>
+            <p>Retrouvez vos notes sans rien branler, comme à l'école,</p>
+            <p>Et retrouvez également les mises à jour <a href="https://github.com/Its_Vichy">sur le repo Github</a>.</p>
+        </div>
+
+        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.96,187.00 271.16,19.23 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+        
+        
+        <% for(var i=0; i < notes.length; i++) { %>
+        <div class="Carte">
+            <p>Matière: <%= notes[i].name %></p>
+            <p>Note: <%= notes[i].value %></p>
+            <p>Moyenne classe: <%= notes[i].class %></p>
+            <p>Minimal: <%= notes[i].min %></p>
+            <p>Maximal: <%= notes[i].max %></p>
+        </div>
+        <% } %>
+
+        <footer id= "Footer" >
+            <p><a class="SoftUrl" href="#">Github</a></p>
+            <p><a class="SoftUrl" href="#">Discord</a></p>
+            <p><a class="SoftUrl" href="#">YouTube</a></p>
+        </footer>
+    </body>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+      * {
+        font-family: "Itim", cursive;
+        background-color: #2b2a2a;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      a {
+        background-color: #08f;
+        cursor: pointer;
+      }
+      a:visited {
+        color: #202020;
+      }
+      a:link {
+        color: #202020;
+      }
+      a:active {
+        color: #202020;
+      }
+
+      p {
+        background-color: #08f;
+      }
+
+      .SoftUrl {
+        text-decoration: none;
+      }
+
+      #HeaderPage {
+        background-color: #08f;
+        padding: 16px;
+      }
+      #HeaderPage h1 {
+        background-color: #08f;
+        color: #202020;
+      }
+
+      #Footer {
+        background-color: #08f;
+        position: absolute;
+        padding: 15px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+      #Footer p {
+        text-align: center;
+      }
+
+      .Carte {
+        border: 1px solid #000;
+        display: inline-block;
+        box-shadow: 5px 5px 2px 1px #1d1d1d;
+        border-radius: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 10px;
+        background-color: #424242;
+      }
+      .Carte p {
+        background-color: #424242;
+      }
+
+      /*# sourceMappingURL=style.css.map */
+
+    </style>
+</head>
